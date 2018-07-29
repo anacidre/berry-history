@@ -10,5 +10,31 @@
 </head>
 <body>
   <berry-root></berry-root>
+  <!-- Polyfills for Browsers supporting
+         Custom Elements. Needed b/c we downlevel
+         to ES5. See: @webcomponents/custom-elements
+    -->
+    <script src="./assets/web-components/custom-card/native-shim.js"></script>
+
+    <!-- Polyfills for Browsers not supporting
+         Custom Elements. See: @webcomponents/custom-elements
+    -->
+    <script src="./assets/web-components/custom-card/custom-elements.min.js"></script>
+
+    <!-- Zone.js -->
+    <!--
+      Consider excluding zone.js when creating
+      custom Elements by using the noop zone.
+    -->
+    <script src="./assets/web-components/custom-card/native-shim.js"></script>
+
+    <!-- Rx -->
+    <script src="./assets/web-components/custom-card/rxjs.umd.js"></script>
+
+    <!-- Angular Packages -->
+    <script src="./assets/web-components/custom-card/core.umd.js"></script>
+    <script src="./assets/web-components/custom-card/common.umd.js"></script>
+    <script src="./assets/web-components/custom-card/platform-browser.umd.js"></script>
+    <script src="./assets/web-components/custom-card/elements.umd.js"></script>
 </body>
 </html>

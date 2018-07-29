@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as bbCard from '../web-components/custom-card/custom-card.js';
+import * as bbCard from '../assets/web-components/custom-card/custom-card.js';
 
 
 @Component({
