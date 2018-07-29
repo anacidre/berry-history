@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as bbCard from '../web-components/custom-card/custom-card.js';
+
 
 @Component({
   selector: 'berry-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'berry-history';
+  constructor(){
+    console.log(bbCard);
+  }
 }
