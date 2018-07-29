@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CardComponent } from './custom-card/custom-card.js';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CardComponent
   ],
-  providers: [],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
