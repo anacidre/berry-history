@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import * as bbCard from '../assets/web-components/custom-card/custom-card.js';
-
+import * as bbCard from '../assets/web-components/custom-card/bb-card.js';
 
 @Component({
   selector: 'berry-root',
@@ -9,7 +8,7 @@ import * as bbCard from '../assets/web-components/custom-card/custom-card.js';
 })
 export class AppComponent {
   title = 'berry-history';
-  constructor(){
+  constructor() {
     console.log(bbCard);
   }
 }
