@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import * as bbCard from '../assets/web-components/custom-card/bb-card.js';
+import * as bbCard from '../assets/web-components/bb-card/bb-card.js';
 
 @Component({
   selector: 'berry-root',
